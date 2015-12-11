@@ -1,0 +1,78 @@
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+#Q2A Default directories and files to be excluded
+/.htaccess
+/*.yml
+/*.html
+/*.png
+/*.jpeg
+/*.txt
+/*.php
+/CONTRIBUTING.md
+qa-include/
+qa-external-example/
+qa-tests/
+qa-lang/
+qa-content/
+qa-plugin/recaptcha-captcha
+qa-plugin/tag-cloud-widget
+qa-plugin/wysiwyg-editor
+qa-plugin/xml-sitemap
+qa-plugin/basic-adsense
+qa-plugin/event-logger
+qa-plugin/example-page
+qa-plugin/mouseover-layer
+qa-plugin/opensearch-support
+qa-plugin/facebook-login
+qa-plugin/blog-tool
+qa-plugin/extra-*
+qa-plugin/q2a*
+qa-theme/Candy
+qa-theme/Classic
+qa-theme/Snow
+qa-theme/SnowFlat
+
+#PHPStroam config files
+.idea

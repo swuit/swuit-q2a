@@ -73,6 +73,7 @@
 
                 $css_paths['donut'] = 'css/donut.min.css?' . DONUT_THEME_VERSION;  //put the donut.min.css for the prod mode
             }
+            $css_paths['append'] = 'css/append.css';
 
             $this->donut_resources( $css_paths, 'css' );
 
@@ -1011,8 +1012,10 @@
                     $users = array_slice( $users, 0, $pagesize );
                     $usershtml = qa_userids_handles_html( $users );
 
-                    foreach ( $ranking['items'] as $user ) {
-                        $this->output( '<div class="user-box col-sm-' . ceil( 12 / $columns ) . ' col-xs-12">' );
+                    foreach ( $ranking['items'] as $k=>$user ) {
+                        if($k<3){
+                        $this->output( '<div class="user-box col-sm-' . ceil( 12 / $columns ) . ' col-xs-12 user-point-top-"' . $k .'>' );
+                        }
                         $user_raw = !empty( $user['raw'] ) ? $user['raw'] : $user;
                         $handle = @$user_raw['handle'];
                         $handle_html = @$usershtml[$user_raw['userid']];
